@@ -2,7 +2,10 @@
 
   A super simple webview user-agent detector
 
-  [![Build Status](https://travis-ci.org/atomantic/is-ua-webview.png)](https://travis-ci.org/atomantic/is-ua-webview)
+  [![Build Status](https://travis-ci.org/atomantic/is-ua-webview.png)](https://travis-ci.org/atomantic/is-ua-webview)  [![](https://img.shields.io/npm/dm/is-ua-webview.svg?style=flat)](https://www.npmjs.org/package/is-ua-webview)
+  [![](https://img.shields.io/npm/v/is-ua-webview.svg?style=flat)](https://www.npmjs.org/package/is-ua-webview)
+  [![](https://img.shields.io/david/atomantic/is-ua-webview.svg?style=flat)](https://www.npmjs.org/package/is-ua-webview)
+
 
 ## Installation
 
