@@ -14,10 +14,10 @@
 ## Usage
 
 ```js
-const isWebview = require('is-ua-webview')
+var isWebview = require('is-ua-webview')
 
 // just for testing:
-const assert = require('assert')
+var assert = require('assert')
 
 // identifies googlebot as bot (returns true)
 assert(isWebview('Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'))

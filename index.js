@@ -1,5 +1,5 @@
-const rules = require('./data/rules')
-const webviewRegExp = new RegExp('(' + rules.join('|') + ')', 'ig')
+var rules = require('./data/rules')
+var webviewRegExp = new RegExp('(' + rules.join('|') + ')', 'ig')
 
 module.exports = function isWebview(ua) {
   return !!ua.match(webviewRegExp)
