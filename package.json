@@ -1,6 +1,6 @@
 {
   "name": "is-ua-webview",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "useragent parsing for webview detection",
   "main": "index.js",
   "scripts": {
