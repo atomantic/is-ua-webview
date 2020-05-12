@@ -14,16 +14,16 @@
 ## Usage
 
 ```js
-var isWebview = require('is-ua-webview')
+const isWebview = require('is-ua-webview')
 
 // just for testing:
-var assert = require('assert')
+const assert = require('assert')
 
-// identifies googlebot as bot (returns true)
-assert(isWebview('Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)'))
+// Facebook App embedded page load
+assert(isWebview('Mozilla/5.0 (Linux; Android 4.4.4; One Build/KTU84L.H4) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/28.0.0.20.16;]'))
 
-// Android Pixel is not a bot (returns false)
-assert(!isWebview('Android 7.1; Pixel Build/NDE63P)'))
+// Chrome/Android browser
+assert(!isWebview('Mozilla/5.0 (Linux; Android 4.4.4; One Build/KTU84L.H4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.135 Mobile Safari/537.36'))
 ```
 
 ## Tests
@@ -33,12 +33,6 @@ Run tests
 npm test
 ```
 
+## Why
 
-## Author
-
-Adam Eivy is a software architect by day and a drawing dad by night: [follow him on the interwebs](http://adameivy.com)
-
-[![follow](https://img.shields.io/twitter/follow/antic.svg?style=social&label=Follow)](https://twitter.com/antic)
-
-Worthy of a tip? 
-⚡ Lightning Bitcoin Tips Accepted https://tippin.me/@antic
+This was built for a web service that wanted to add a logging point in case the page load came from inside a webview where cookies were possibly throw away (not treated the same as a SafariViewController or native browser load). The tests are lacking completeness as this tool was only being used to discover and add detection in logs. The author of this module is no longer the owner/maintainer of the production service that used this module, so if you are interested in using it, please consider adding more tests and make a PR with tests :)
