@@ -1,3 +1,4 @@
-declare function isWebview(ua: string): boolean;
-export const isWebview;
-
+declare module "is-ua-webview" {
+    function isWebview(ua: string): boolean;
+    export default isWebview;
+}
